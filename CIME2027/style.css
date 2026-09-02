@@ -138,7 +138,7 @@ a:hover { color: var(--navy); text-decoration-color: var(--gold); }
   padding: 28px 0 72px;
 }
 
-.eyebrow, .section-number, .note-label {
+.eyebrow, .note-label {
   margin: 0 0 15px;
   color: var(--gold);
   font-size: 12px;
@@ -195,7 +195,7 @@ h1, h2, h3 {
 .section-block, .program-section { padding: 82px 0 0; }
 .section-heading {
   display: grid;
-  grid-template-columns: 58px 1fr;
+  grid-template-columns: 1fr;
   align-items: baseline;
   margin-bottom: 35px;
   padding-bottom: 18px;
@@ -212,8 +212,6 @@ h1, h2, h3 {
   font-size: 15px;
   font-weight: 400;
 }
-.section-number { margin: 0; }
-
 .people-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 55px; }
 .person-card { padding: 26px 0 30px; border-bottom: 1px solid var(--line); }
 .person-card > a, .director > a {
@@ -307,11 +305,10 @@ h1, h2, h3 {
 .course-list { border-top: 1px solid var(--line); }
 .course {
   display: grid;
-  grid-template-columns: 58px 1fr;
+  grid-template-columns: 1fr;
   padding: 28px 0 30px;
   border-bottom: 1px solid var(--line);
 }
-.course-number { margin: 3px 0 0; color: var(--gold); font-size: 12px; font-weight: 700; }
 .course h3 {
   max-width: 820px;
   margin: 0 0 9px;
