@@ -131,9 +131,9 @@ a:hover { color: var(--navy); text-decoration-color: var(--gold); }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.85fr);
-  gap: clamp(40px, 7vw, 90px);
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: start;
   min-height: 490px;
   padding: 28px 0 72px;
 }
@@ -175,7 +175,13 @@ h1, h2, h3 {
 }
 .date-line strong, .date-line span { display: block; }
 .date-line span { color: var(--muted); }
-.orbit-figure { width: 100%; height: auto; box-shadow: 20px 20px 0 var(--pale-blue); }
+.orbit-figure {
+  width: min(calc(41.76vw + 27px), 572px);
+  height: auto;
+  margin-top: 35px;
+  object-fit: contain;
+  box-shadow: none;
+}
 
 .band {
   margin: 0 calc(50% - 50vw);
@@ -226,6 +232,11 @@ h1, h2, h3 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+.course-title-link {
+  color: inherit;
+  text-decoration-color: color-mix(in srgb, var(--blue) 35%, transparent);
+}
+.course-title-link:hover { color: var(--blue); }
 .directors-list { border-top: 1px solid var(--line); }
 .director {
   display: grid;
@@ -359,6 +370,13 @@ h1, h2, h3 {
 .travel-grid article { padding-top: 20px; border-top: 3px solid var(--navy); }
 .travel-grid h3 { margin: 0 0 18px; color: var(--navy); font-size: 27px; }
 .travel-grid p { margin: 0 0 16px; }
+.official-notice {
+  margin: 34px 0 0;
+  padding: 18px 22px;
+  border-left: 4px solid var(--gold);
+  background: var(--pale-blue);
+  color: var(--muted);
+}
 
 .site-footer {
   display: flex;
@@ -377,12 +395,14 @@ h1, h2, h3 {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 17px;
 }
+.footer-school { color: var(--muted); text-decoration: none; }
+.footer-school:hover { color: var(--blue); }
 
 @media (max-width: 850px) {
   .desktop-nav { display: none; }
   .mobile-nav { display: block; }
   .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 5px; }
-  .orbit-figure { max-width: 600px; }
+  .orbit-figure { width: 100%; height: auto; max-width: 600px; margin-top: 0; }
   .content-grid, .travel-grid { grid-template-columns: 1fr; }
   .travel-grid { gap: 22px; }
 }
