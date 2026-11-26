@@ -424,7 +424,7 @@ h1, h2, h3 {
 .support-link:hover { opacity: 0.72; }
 .support-logo { display: block; max-width: 100%; height: auto; }
 .support-logo--cime { width: auto; height: 170px; }
-.support-logo--castelnuovo { width: min(50vw, 430px); }
+.support-logo--castelnuovo { width: min(50vw, 320px); }
 
 @media (max-width: 850px) {
   .desktop-nav { display: none; }
@@ -452,7 +452,7 @@ h1, h2, h3 {
   .site-footer { flex-direction: column; }
   .support-strip__inner { width: min(calc(100% - 28px), var(--max)); flex-direction: column; gap: 24px; padding: 30px 0; }
   .support-logo--cime { height: 140px; }
-  .support-logo--castelnuovo { width: min(100%, 430px); }
+  .support-logo--castelnuovo { width: min(100%, 320px); }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
